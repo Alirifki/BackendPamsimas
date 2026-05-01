@@ -1,5 +1,8 @@
 <?php
 
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
@@ -19,6 +22,7 @@ define('LARAVEL_START', microtime(true));
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
 }
+
 
 /*
 |--------------------------------------------------------------------------

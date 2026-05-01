@@ -17,11 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/migrate', function () {
-    \Artisan::call('migrate', ['--force' => true]);
-    return 'Migrated!';
-});
-
 Route::get('/', function () {
     return 'Laravel Hidup!';
 });
